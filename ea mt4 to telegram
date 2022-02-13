@@ -3,3 +3,17 @@
 //|                                 Copyright 2020, SafeCarp Finance |
 //|     https://www.upwork.com/o/profiles/users/~01f385ced64055abbc/ |
 //+------------------------------------------------------------------+
+#property copyright "Copyright 2020, SafeCarp Finance"
+#property link      "https://www.upwork.com/o/profiles/users/~01f385ced64055abbc/"
+#property version   "2.00"
+#property strict
+#include <Telegram.mqh>
+//--- input parameters
+input string InpChannelName="@mychannelname";//Channel Name
+input string InpToken="insert telegram bot API here";//Token
+extern string mySigalname = "Enter my signal name";
+input bool AlertonTelegram = true;
+input bool MobileNotification = false;
+input bool EmailNotification = false;
+uint   ServerDelayMilliseconds = 300;
+string AllowSymbols            = "";              // Allow Trading Symbols (Ex: EURUSDq,EURUSDx,EURUSDa)
